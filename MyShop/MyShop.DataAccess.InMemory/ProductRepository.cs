@@ -23,7 +23,7 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
-        public void Commit() //when people add products to our reposityory we do not want to save them right away instead we want people to explicitly persistant when ever we save our products we willstore our products in the cache.
+        public void Commit() //when people add products to our reposityory we do not want to save them right away instead we want people to have a explicitly persistant data which is the product or products selected when ever we save our products we willstore our products in the cache.
         {
             cache["products"] = products;
         }
